@@ -1,0 +1,25 @@
+def find_max(*args):
+    if not args:
+        return None  # Return None if no arguments are provided
+    max_value = args[0]
+    for number in args:
+        if number > max_value:
+            max_value = number
+    return max_value
+
+# Example usage
+result = find_max(3, 5, 7, 2, 8)
+print(f"The maximum value is: {result}")  # Output: The maximum value is: 8
+
+def find_max(*args):
+    if not args:
+        return None  # Return None if no arguments are provided
+    max_value = args[0]
+    for number in args:
+        if number > max_value:
+            max_value = number
+    return max_value
+
+# Example usage
+result = find_max(3, 2, 7, 5, 9, 8)
+print(f"The maximum value is: {result}")  # Output: The maximum value is: 9
